@@ -11,5 +11,9 @@ export class RegisterPage implements OnInit {
 
   ngOnInit() {
   }
+isToastOpen = false;
 
+  setOpen(isOpen: boolean) {
+    this.isToastOpen = isOpen;
+  }
 }
