@@ -20,7 +20,8 @@
       fill="outline"
       placeholder="Enter password"
     ></ion-input>
-    <ion-button expand="full" (click)="setOpen(true)">Login</ion-button>
+<!--     <ion-button expand="full" (click)="setOpen(true)">Login</ion-button> -->
+    <ion-button expand="full" (click)="login() *ngIf="!loader">Login</ion-button>
   </div>
   <ion-header collapse="condense">
     <ion-toolbar>
