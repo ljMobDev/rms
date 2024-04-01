@@ -12,6 +12,7 @@ loader:boolean = false;
 }
 
 login(){
+  this.loader = true;
  this.http.get<any>(`https://webtechnologies.site/v2/agustin/api/login.php?username=`+this.username+`&password=`+this.password)
         .subscribe((data: any) => {
           console.log(data)
